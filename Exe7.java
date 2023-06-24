@@ -5,12 +5,16 @@ import java.util.Scanner;
 public class Exe7 {
 
 	public static void main(String[] args) {
+// cria um novo input
 		Scanner  crime = new Scanner(System.in);
+		
+// conta quantas respostas sim terá nas perguntas
 		int contadorSim = 0;
 		
 		System.out.println("Você telefonou para a vítima? ");
 		String resp1 = crime.nextLine();
 		if (resp1.equalsIgnoreCase("Sim")) {
+			// adiciona ao contador se a resposta for sim
 			contadorSim++;
 		}
 		
